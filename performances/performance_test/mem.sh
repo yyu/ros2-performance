@@ -1,7 +1,7 @@
 #!/bin/bash
 
-ROS2_SDK_INSTALL_PATH="/home/ubuntu/___/ros2_release-latest_20190424_ws/install"
-ROS2_PERFORMANCE_TEST_INSTALL_PATH="/home/ubuntu/___/irobot_perf_with_no_690/ws/install"
+ROS2_SDK_INSTALL_PATH="/home/ubuntu/___/ros2_with_rclcpp690_ws/install"
+ROS2_PERFORMANCE_TEST_INSTALL_PATH="/home/ubuntu/___/irobot_perf_ws/install"
 
 . $ROS2_SDK_INSTALL_PATH/local_setup.bash
 . $ROS2_PERFORMANCE_TEST_INSTALL_PATH/local_setup.bash
