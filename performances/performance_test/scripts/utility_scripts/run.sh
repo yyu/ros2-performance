@@ -16,5 +16,7 @@ if [ ! -x "$(command -v $CMD)" ]; then
     exit 1
 fi
 
+echo -e "\033[32m" $CMD $CMD_ARGS "\033[0m"
+
 $CMD $CMD_ARGS
 echo ""

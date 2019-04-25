@@ -28,7 +28,7 @@ friend class System;
 public:
 
   Node(const std::string& name, const std::string& ros2_namespace, bool ipc = true)
-    : rclcpp::Node(name, ros2_namespace, ipc)
+    : rclcpp::Node(name, ros2_namespace, rclcpp::NodeOptions().use_intra_process_comms(ipc))
   {
     RCLCPP_INFO(this->get_logger(), "Node %s created", name.c_str());
   }
