@@ -1,0 +1,23 @@
+Time[ms]    Caller                   Code  Description         
+0           SYSTEM                   0     [discovery] PDP completed
+0           SYSTEM                   0     [discovery] EDP completed
+106         topic_2->node_1          3     msgs 1 to 3 lost.   
+106         topic_2->node_0          3     msgs 1 to 3 lost.   
+106         topic_2->node_1          2     msg 2 too late. 90637us > 10000us
+106         topic_2->node_0          2     msg 2 too late. 90646us > 10000us
+106         topic_2->node_1          2     msg 3 too late. 80886us > 10000us
+106         topic_2->node_0          2     msg 3 too late. 80897us > 10000us
+106         topic_2->node_1          2     msg 4 too late. 70983us > 10000us
+106         topic_2->node_0          2     msg 4 too late. 70992us > 10000us
+106         topic_2->node_1          2     msg 5 too late. 61017us > 10000us
+106         topic_2->node_0          2     msg 5 too late. 61027us > 10000us
+106         topic_2->node_1          2     msg 6 too late. 51059us > 10000us
+106         topic_2->node_0          2     msg 6 too late. 51068us > 10000us
+106         topic_2->node_1          2     msg 7 too late. 41111us > 10000us
+106         topic_2->node_0          2     msg 7 too late. 41118us > 10000us
+106         topic_2->node_1          2     msg 8 too late. 31157us > 10000us
+106         topic_2->node_0          2     msg 8 too late. 31163us > 10000us
+106         topic_2->node_1          2     msg 9 too late. 21209us > 10000us
+106         topic_2->node_0          2     msg 9 too late. 21226us > 10000us
+106         topic_2->node_1          2     msg 10 too late. 11258us > 10000us
+106         topic_2->node_0          2     msg 10 too late. 11277us > 10000us

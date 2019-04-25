@@ -1,0 +1,43 @@
+Time[ms]    Caller                   Code  Description         
+0           SYSTEM                   0     [discovery] PDP completed
+100         SYSTEM                   0     [discovery] EDP completed
+200         topic_4->node_2          3     msg 0 lost.         
+200         topic_4->node_0          3     msg 0 lost.         
+200         topic_4->node_2          2     msg 1 too late. 90853us > 10000us
+200         topic_4->node_0          2     msg 1 too late. 90855us > 10000us
+200         topic_4->node_3          3     msg 0 lost.         
+200         topic_4->node_3          2     msg 1 too late. 90998us > 10000us
+200         topic_4->node_1          3     msg 0 lost.         
+200         topic_4->node_1          2     msg 1 too late. 91080us > 10000us
+200         topic_4->node_0          2     msg 2 too late. 81153us > 10000us
+200         topic_4->node_2          2     msg 2 too late. 81173us > 10000us
+200         topic_4->node_3          2     msg 2 too late. 81268us > 10000us
+200         topic_4->node_0          2     msg 3 too late. 71281us > 10000us
+200         topic_4->node_1          2     msg 2 too late. 81302us > 10000us
+200         topic_4->node_2          2     msg 3 too late. 71315us > 10000us
+200         topic_4->node_3          2     msg 3 too late. 71368us > 10000us
+200         topic_4->node_0          2     msg 4 too late. 61385us > 10000us
+200         topic_4->node_1          2     msg 3 too late. 71391us > 10000us
+200         topic_4->node_2          2     msg 4 too late. 61408us > 10000us
+200         topic_4->node_3          2     msg 4 too late. 61450us > 10000us
+200         topic_4->node_0          2     msg 5 too late. 51471us > 10000us
+200         topic_4->node_2          2     msg 5 too late. 51486us > 10000us
+200         topic_4->node_1          2     msg 4 too late. 61480us > 10000us
+200         topic_4->node_3          2     msg 5 too late. 51526us > 10000us
+201         topic_4->node_0          2     msg 6 too late. 41581us > 10000us
+201         topic_4->node_2          2     msg 6 too late. 41594us > 10000us
+201         topic_4->node_1          2     msg 5 too late. 51601us > 10000us
+201         topic_4->node_3          2     msg 6 too late. 41630us > 10000us
+201         topic_4->node_0          2     msg 7 too late. 31671us > 10000us
+201         topic_4->node_1          2     msg 6 too late. 41689us > 10000us
+201         topic_4->node_2          2     msg 7 too late. 31704us > 10000us
+201         topic_4->node_3          2     msg 7 too late. 31712us > 10000us
+201         topic_4->node_0          2     msg 8 too late. 21751us > 10000us
+201         topic_4->node_1          2     msg 7 too late. 31768us > 10000us
+201         topic_4->node_2          2     msg 8 too late. 21796us > 10000us
+201         topic_4->node_3          2     msg 8 too late. 21813us > 10000us
+201         topic_4->node_0          2     msg 9 too late. 11824us > 10000us
+201         topic_4->node_1          2     msg 8 too late. 21844us > 10000us
+201         topic_4->node_2          2     msg 9 too late. 11874us > 10000us
+201         topic_4->node_3          2     msg 9 too late. 11901us > 10000us
+201         topic_4->node_1          2     msg 9 too late. 11918us > 10000us
