@@ -5,7 +5,7 @@ ROS2_PERFORMANCE_TEST_INSTALL_PATH="/home/ubuntu/___/irobot_perf_ws/install"
 
 . $ROS2_SDK_INSTALL_PATH/local_setup.bash
 . $ROS2_PERFORMANCE_TEST_INSTALL_PATH/local_setup.bash
-. env_no690.sh
+. env_with690.sh
 
 export MAX_PUBLISHERS=1
 export MAX_SUBSCRIBERS=1

@@ -8,9 +8,9 @@ ROS2_PERFORMANCE_TEST_INSTALL_PATH="/home/ubuntu/___/irobot_perf_ws/install"
 . env_with690.sh
 export MAX_PUBLISHERS=1
 export MAX_SUBSCRIBERS=5
-export MSG_TYPES=10b
+export MSG_TYPES=8mb
 export PUBLISH_FREQUENCY=100
-export DURATION=30
+export DURATION=600
 export NUM_EXPERIMENTS=3
 export MON_CPU_RAM=1
 bash scripts/pub_sub_ros2.sh
