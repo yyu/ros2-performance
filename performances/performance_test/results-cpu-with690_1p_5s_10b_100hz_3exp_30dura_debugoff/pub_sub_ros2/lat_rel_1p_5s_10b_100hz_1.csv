@@ -1,0 +1,6 @@
+node        topic       size[b]   received[#]   late[#]   too_late[#] lost[#]   mean[us]  sd[us]    min[us]   max[us]   freq[hz]    duration[s]
+node_0      topic_5     10        3001          0         0           0         556       21        349       605       100         30        
+node_1      topic_5     10        3001          0         0           0         536       34        352       613       100         30        
+node_2      topic_5     10        3001          0         0           0         504       24        277       580       100         30        
+node_3      topic_5     10        3001          0         0           0         552       22        370       594       100         30        
+node_4      topic_5     10        3001          0         0           0         545       21        372       602       100         30        
