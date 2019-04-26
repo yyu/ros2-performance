@@ -10,7 +10,85 @@ No obvious improvements in terms of cpu and mem were observed.
 
 ### ROS2 with no rclcpp#690 patch
 
-See [ros2.no-rclcpp690.repos](ros2.no-rclcpp690.repos) for package versions used to build ROS2 for the tests.
+| path | version |
+|------|---------|
+|  src/ament/ament_cmake                      |  (0.6.1)   |
+|  src/ament/ament_index                      |  (0.5.1)   |
+|  src/ament/ament_lint                       |  (0.6.4)   |
+|  src/ament/ament_package                    |  (0.6.0)   |
+|  src/ament/googletest                       |  (c8b6f2b) |
+|  src/ament/osrf_pycommon                    |  (0.1.6)   |
+|  src/ament/uncrustify_vendor                |  (1.1.0)   |
+|  src/eProsima/Fast-CDR                      |  (v1.0.8)  |
+|  src/eProsima/Fast-RTPS                     |  (v1.7.2)  |
+|  src/osrf/osrf_testing_tools_cpp            |  (1.1.0)   |
+|  src/ros-perception/laser_geometry          |  (2.0.0)   |
+|  src/ros-planning/navigation_msgs           |  (2.0.0)   |
+|  src/ros-visualization/python_qt_binding    |  (1.0.1)   |
+|  src/ros-visualization/qt_gui_core          |  (1.0.4)   |
+|  src/ros-visualization/rqt                  |  (1.0.2)   |
+|  src/ros-visualization/rqt_console          |  (1.0.1)   |
+|  src/ros-visualization/rqt_msg              |  (1.0.1)   |
+|  src/ros-visualization/rqt_plot             |  (1.0.2)   |
+|  src/ros-visualization/rqt_publisher        |  (1.0.3)   |
+|  src/ros-visualization/rqt_py_console       |  (1.0.0)   |
+|  src/ros-visualization/rqt_service_caller   |  (1.0.1)   |
+|  src/ros-visualization/rqt_shell            |  (1.0.0)   |
+|  src/ros-visualization/rqt_srv              |  (1.0.1)   |
+|  src/ros-visualization/rqt_top              |  (1.0.0)   |
+|  src/ros/class_loader                       |  (1.2.0)   |
+|  src/ros/pluginlib                          |  (2.2.1)   |
+|  src/ros/resource_retriever                 |  (2.1.0)   |
+|  src/ros/ros_environment                    |  (2.2.0)   |
+|  src/ros/urdfdom_headers                    |  (1.0.2)   |
+|  src/ros2/ament_cmake_ros                   |  (0.5.0)   |
+|  src/ros2/common_interfaces                 |  (0.6.1)   |
+|  src/ros2/console_bridge_vendor             |  (1.1.0)   |
+|  src/ros2/demos                             |  (0.6.2)   |
+|  src/ros2/example_interfaces                |  (0.6.2)   |
+|  src/ros2/examples                          |  (0.6.3)   |
+|  src/ros2/geometry2                         |  (0.10.1)  |
+|  src/ros2/kdl_parser                        |  (2.2.0)   |
+|  src/ros2/launch                            |  (0.7.4)   |
+|  src/ros2/libyaml_vendor                    |  (1.0.0)   |
+|  src/ros2/message_filters                   |  (3.0.0)   |
+|  src/ros2/orocos_kinematics_dynamics        |  (3.1.0)   |
+|  src/ros2/poco_vendor                       |  (1.1.1)   |
+|  src/ros2/rcl                               |  (0.6.5)   |
+|  src/ros2/rcl_interfaces                    |  (0.6.3)   |
+|  src/ros2/rcl_logging                       |  (0.2.0)   |
+|  src/ros2/rclcpp                            |  (0.6.4)   |
+|  src/ros2/rclpy                             |  (0.6.4)   |
+|  src/ros2/rcutils                           |  (0.6.2)   |
+|  src/ros2/realtime_support                  |  (0.6.0)   |
+|  src/ros2/rmw                               |  (0.6.1)   |
+|  src/ros2/rmw_connext                       |  (0.6.1)   |
+|  src/ros2/rmw_fastrtps                      |  (0.6.2)   |
+|  src/ros2/rmw_implementation                |  (0.6.1)   |
+|  src/ros2/rmw_opensplice                    |  (0.6.3)   |
+|  src/ros2/robot_state_publisher             |  (2.1.0)   |
+|  src/ros2/ros1_bridge                       |  (0.6.2)   |
+|  src/ros2/ros2cli                           |  (0.6.3)   |
+|  src/ros2/rosidl                            |  (0.6.3)   |
+|  src/ros2/rosidl_dds                        |  (0.6.0)   |
+|  src/ros2/rosidl_defaults                   |  (0.6.0)   |
+|  src/ros2/rosidl_python                     |  (0.6.3)   |
+|  src/ros2/rosidl_typesupport                |  (0.6.3)   |
+|  src/ros2/rosidl_typesupport_connext        |  (0.6.4)   |
+|  src/ros2/rosidl_typesupport_fastrtps       |  (0.6.1)   |
+|  src/ros2/rosidl_typesupport_opensplice     |  (0.6.2)   |
+|  src/ros2/rviz                              |  (5.1.0)   |
+|  src/ros2/sros2                             |  (0.6.3)   |
+|  src/ros2/system_tests                      |  (0.6.1)   |
+|  src/ros2/tinyxml2_vendor                   |  (0.6.1)   |
+|  src/ros2/tinyxml_vendor                    |  (0.5.0)   |
+|  src/ros2/tlsf                              |  (0.5.0)   |
+|  src/ros2/unique_identifier_msgs            |  (2.0.0)   |
+|  src/ros2/urdf                              |  (2.2.0)   |
+|  src/ros2/urdfdom                           |  (2.1.0)   |
+|  src/ros2/yaml_cpp_vendor                   |  (5.0.0)   |
+
+See [ros2.no-rclcpp690.repos](ros2.no-rclcpp690.repos) for details
 
 ### ROS2 with rclcpp#690 patch
 
@@ -58,3 +136,4 @@ bash scripts/only_subs.sh
 |-----------|-----------|-----------|
 | CPU | ![](results-cpu-with690_1p_5s_10b_100hz_3exp_30dura_debugoff__time_cpu.png) | ![](results-cpu-no690_1p_5s_10b_100hz_3exp_30dura__time_cpu.png) |
 | rss+vsz | ![](results-mem-with690_1p_1s_3exp_10dura__time_rss.vsz.png) | ![](results-mem-no690_1p_1s_3exp_10dura__time_rss.vsz.png) |
+
