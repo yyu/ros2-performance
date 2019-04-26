@@ -176,6 +176,50 @@ See [ros2.no-rclcpp690.repos](ros2.no-rclcpp690.repos) for details
 
 See [ros2.with-rclcpp690.repos](ros2.with-rclcpp690.repos) for details, in which [this line](https://github.com/yyu/ros2-performance/blob/rclcpp690/performances/performance_test/ros2.with-rclcpp690.repos#L189) shows the patch is being used.
 
+The following code changes were made for compatibilities.
+
+```diff
+=== src/ros2/robot_state_publisher (git) ===
+diff --git a/src/robot_state_publisher.cpp b/src/robot_state_publisher.cpp
+index 3d47a95..a57b7f5 100644
+--- a/src/robot_state_publisher.cpp
++++ b/src/robot_state_publisher.cpp
+@@ -87,7 +87,7 @@ RobotStatePublisher::RobotStatePublisher(
+   qos.durability = RMW_QOS_POLICY_DURABILITY_TRANSIENT_LOCAL;
+
+   model_xml_.data = model_xml;
+-  node_handle->declare_parameter("robot_description", model_xml);
++  node_handle->describe_parameters("robot_description", model_xml);
+   description_pub_ = node_handle->create_publisher<std_msgs::msg::String>(
+     "robot_description", qos);
+ }
+```
+
+```diff
+=== ros2-performance (git) ===
+diff --git a/performances/performance_test/include/performance_test/ros2/node.hpp b/performances/performance_test/include/performance_test/ros2/node.hpp
+index 3979e15..064b3b1 100644
+--- a/performances/performance_test/include/performance_test/ros2/node.hpp
++++ b/performances/performance_test/include/performance_test/ros2/node.hpp
+@@ -28,7 +28,7 @@ friend class System;
+ public:
+ 
+   Node(const std::string& name, const std::string& ros2_namespace, bool ipc = true)
+-    : rclcpp::Node(name, ros2_namespace, ipc)
++    : rclcpp::Node(name, ros2_namespace, rclcpp::NodeOptions().use_intra_process_comms(ipc))
+   {
+     RCLCPP_INFO(this->get_logger(), "Node %s created", name.c_str());
+   }
+@@ -383,4 +383,4 @@ private:
+   std::shared_ptr<EventsLogger> _events_logger;
+ 
+ };
+-}
+\ No newline at end of file
++}
+
+```
+
 ## Commands
 
 ### CPU Experiment
