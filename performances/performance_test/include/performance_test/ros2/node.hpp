@@ -228,7 +228,7 @@ private:
     pub->publish(msg);
     // increase the tracker count (with 0 latency as this is the publisher)
     tracker.scan(msg->header, msg->header.stamp, _events_logger);
-    RCLCPP_DEBUG(this->get_logger(), "Publishing to %s msg number %d", name.c_str(), msg->header.tracking_number);
+    //yyu// RCLCPP_DEBUG(this->get_logger(), "Publishing to %s msg number %d", name.c_str(), msg->header.tracking_number);
   }
 
   // Only resize if it is a dynamic message
@@ -260,7 +260,7 @@ private:
     auto& tracker = _subs.at(name).second;
     tracker.scan(msg->header, this->now(), _events_logger);
 
-    RCLCPP_DEBUG(this->get_logger(), "Received on %s msg number %d after %f", name.c_str(), msg->header.tracking_number, tracker.stat().last());
+    //yyu// RCLCPP_DEBUG(this->get_logger(), "Received on %s msg number %d after %f", name.c_str(), msg->header.tracking_number, tracker.stat().last());
   }
 
 
@@ -315,7 +315,7 @@ private:
     tracker.scan(request->header, this->now(), _events_logger);
     */
 
-    RCLCPP_DEBUG(this->get_logger(), "Requesting to %s request number %d", name.c_str(), request->header.tracking_number);
+    //yyu// RCLCPP_DEBUG(this->get_logger(), "Requesting to %s request number %d", name.c_str(), request->header.tracking_number);
   }
 
 
@@ -331,7 +331,7 @@ private:
       auto& tracker = _clients.at(name).second;
       tracker.scan(request->header, this->now(), _events_logger);
 
-      RCLCPP_DEBUG(this->get_logger(), "Response on %s request number %d received with latency %f", name.c_str(), request->header.tracking_number, tracker.stat().last());
+      //yyu// RCLCPP_DEBUG(this->get_logger(), "Response on %s request number %d received with latency %f", name.c_str(), request->header.tracking_number, tracker.stat().last());
   }
 
   // Client blocking call does not work with timers
@@ -357,7 +357,7 @@ private:
     response->header.stamp = this->now();
 
     tracker.scan(request->header, response->header.stamp, _events_logger);
-    RCLCPP_DEBUG(this->get_logger(), "Request on %s request number %d received with latency %f", name.c_str(), request->header.tracking_number, tracker.stat().last());
+    //yyu// RCLCPP_DEBUG(this->get_logger(), "Request on %s request number %d received with latency %f", name.c_str(), request->header.tracking_number, tracker.stat().last());
   }
 
 
