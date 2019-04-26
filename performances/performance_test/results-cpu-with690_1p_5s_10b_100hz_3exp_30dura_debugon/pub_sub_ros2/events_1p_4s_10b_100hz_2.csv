@@ -1,0 +1,5 @@
+Time[ms]    Caller                   Code  Description         
+0           SYSTEM                   0     [discovery] PDP completed
+100         SYSTEM                   0     [discovery] EDP completed
+27654       topic_4->node_2          1     msg 2756 late. 2020us > 2000us
+27654       topic_4->node_1          1     msg 2756 late. 2029us > 2000us

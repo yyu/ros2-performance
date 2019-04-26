@@ -1,0 +1,4 @@
+Time[ms]    Caller                   Code  Description         
+0           SYSTEM                   0     [discovery] PDP completed
+100         SYSTEM                   0     [discovery] EDP completed
+27586       topic_5->node_4          1     msg 2749 late. 2242us > 2000us
