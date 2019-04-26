@@ -10,11 +10,11 @@ No obvious improvements in terms of cpu and mem were observed.
 
 ### ROS2 with no rclcpp#690 patch
 
-See [ros2.no-rclcpp690.repos](ros2-no-rclcpp690.repos) for package versions used to build ROS2 for the tests.
+See [ros2.no-rclcpp690.repos](ros2.no-rclcpp690.repos) for package versions used to build ROS2 for the tests.
 
 ### ROS2 with rclcpp#690 patch
 
-See [ros2.with-rclcpp690.repos](ros2-with-rclcpp690.repos) for package versions used to build ROS2 for the tests, in which [this line](https://github.com/yyu/ros2-performance/blob/rclcpp690/performances/performance_test/ros2.with-rclcpp690.repos#L189) shows the patch is being used.
+See [ros2.with-rclcpp690.repos](ros2.with-rclcpp690.repos) for package versions used to build ROS2 for the tests, in which [this line](https://github.com/yyu/ros2-performance/blob/rclcpp690/performances/performance_test/ros2.with-rclcpp690.repos#L189) shows the patch is being used.
 
 ## Commands
 
