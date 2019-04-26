@@ -1,0 +1,36 @@
+Time[ms]    Caller                   Code  Description         
+0           SYSTEM                   0     [discovery] PDP completed
+0           SYSTEM                   0     [discovery] EDP completed
+170         topic_3->node_1          3     msgs 6 to 13 lost.  
+170         topic_3->node_0          3     msgs 6 to 13 lost.  
+170         topic_3->node_2          3     msgs 6 to 13 lost.  
+170         topic_3->node_1          2     msg 7 too late. 100171us > 10000us
+170         topic_3->node_2          2     msg 7 too late. 100197us > 10000us
+170         topic_3->node_0          2     msg 7 too late. 100171us > 10000us
+170         topic_3->node_0          2     msg 8 too late. 90450us > 10000us
+170         topic_3->node_1          2     msg 8 too late. 90450us > 10000us
+170         topic_3->node_0          2     msg 9 too late. 80501us > 10000us
+170         topic_3->node_1          2     msg 9 too late. 80517us > 10000us
+170         topic_3->node_0          2     msg 10 too late. 70538us > 10000us
+170         topic_3->node_2          2     msg 8 too late. 90544us > 10000us
+170         topic_3->node_1          2     msg 10 too late. 70556us > 10000us
+170         topic_3->node_0          2     msg 11 too late. 60578us > 10000us
+170         topic_3->node_1          2     msg 11 too late. 60622us > 10000us
+170         topic_3->node_0          2     msg 12 too late. 50655us > 10000us
+170         topic_3->node_1          2     msg 12 too late. 50683us > 10000us
+170         topic_3->node_0          2     msg 13 too late. 40675us > 10000us
+170         topic_3->node_2          2     msg 9 too late. 80680us > 10000us
+170         topic_3->node_1          2     msg 13 too late. 40702us > 10000us
+170         topic_3->node_0          2     msg 14 too late. 30710us > 10000us
+170         topic_3->node_1          2     msg 14 too late. 30740us > 10000us
+170         topic_3->node_0          2     msg 15 too late. 20751us > 10000us
+170         topic_3->node_2          2     msg 10 too late. 70760us > 10000us
+170         topic_3->node_1          2     msg 15 too late. 20780us > 10000us
+170         topic_3->node_0          2     msg 16 too late. 10847us > 10000us
+170         topic_3->node_2          2     msg 11 too late. 60802us > 10000us
+170         topic_3->node_1          2     msg 16 too late. 10877us > 10000us
+170         topic_3->node_2          2     msg 12 too late. 50863us > 10000us
+170         topic_3->node_2          2     msg 13 too late. 40884us > 10000us
+170         topic_3->node_2          2     msg 14 too late. 30917us > 10000us
+170         topic_3->node_2          2     msg 15 too late. 20956us > 10000us
+171         topic_3->node_2          2     msg 16 too late. 11048us > 10000us
