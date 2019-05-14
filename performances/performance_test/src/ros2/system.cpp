@@ -118,9 +118,24 @@ void performance_test::System::wait_discovery()
         for (const auto& n : _nodes){
             // dividing by 2 because half of the entries are empty
             // TODO check if it is always true
-            auto discovered_participants = n->get_node_names().size()/2;
+            auto discovered_participants = n->get_node_names().size();
+            //auto discovered_participants = n->get_node_names().size()/2;
+
+            auto all_node_names = n->get_node_names();
+            const std::set<std::string> unique_names{all_node_names.begin(), all_node_names.end()};
+            std::vector<std::string> sorted_node_names{unique_names.begin(), unique_names.end()};
+            std::sort(all_node_names.begin(), all_node_names.end());
+            std::cerr << "[";
+            bool is_1st = true;
+            for (const auto& nn : all_node_names) {
+                if (!is_1st) std::cerr << ",";
+                std::cerr << nn;
+                is_1st = false;
+            }
+            std::cerr << "]";
 
             pdp_ok = (discovered_participants == num_nodes);
+            std::cerr << "(" << discovered_participants << "/" << num_nodes << ")" << std::endl;
 
             if (!pdp_ok) break;
         }
